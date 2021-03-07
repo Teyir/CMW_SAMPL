@@ -1,0 +1,536 @@
+@charset "UTF-8";
+/*
+
+            ████████╗███████╗██╗░░░██╗██╗██████╗░
+            ╚══██╔══╝██╔════╝╚██╗░██╔╝██║██╔══██╗
+            ░░░██║░░░█████╗░░░╚████╔╝░██║██████╔╝
+            ░░░██║░░░██╔══╝░░░░╚██╔╝░░██║██╔══██╗
+            ░░░██║░░░███████╗░░░██║░░░██║██║░░██║
+            ░░░╚═╝░░░╚══════╝░░░╚═╝░░░╚═╝╚═╝░░╚═╝
+
+                      ███████╗████████╗
+                      ██╔════╝╚══██╔══╝
+                      █████╗░░░░░██║░░░
+                      ██╔══╝░░░░░██║░░░
+                      ███████╗░░░██║░░░
+                      ╚══════╝░░░╚═╝░░░
+
+              ░█████╗░███╗░░░███╗░██╗░░░░░░░██╗
+              ██╔══██╗████╗░████║░██║░░██╗░░██║
+              ██║░░╚═╝██╔████╔██║░╚██╗████╗██╔╝
+              ██║░░██╗██║╚██╔╝██║░░████╔═████║░
+              ╚█████╔╝██║░╚═╝░██║░░╚██╔╝░╚██╔╝░
+              ░╚════╝░╚═╝░░░░░╚═╝░░░╚═╝░░░╚═╝░░
+
+██████████████████████████████████████████████████████████████████████
+
+        ░██████╗░█████╗░███╗░░░███╗██████╗░██╗░░░░░███████╗
+        ██╔════╝██╔══██╗████╗░████║██╔══██╗██║░░░░░██╔════╝
+        ╚█████╗░███████║██╔████╔██║██████╔╝██║░░░░░█████╗░░
+        ░╚═══██╗██╔══██║██║╚██╔╝██║██╔═══╝░██║░░░░░██╔══╝░░
+        ██████╔╝██║░░██║██║░╚═╝░██║██║░░░░░███████╗███████╗
+        ╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░╚══════╝╚══════╝
+
+██████████████████████████████████████████████████████████████████████
+
+
+ */
+
+/*  OUTILS:
+
+    Couleurs hexadecimal → https://htmlcolorcodes.com/fr/
+
+    Polices → https://fonts.google.com
+
+
+ */
+
+
+        /* ==== IMPORTATION DE LA POLICE ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+
+
+
+
+/* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+            /* ==== PARTIE GLOBAL DU THEME ==== */
+
+/* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+
+
+        /* ==== SECTION VARIABLES ==== */
+
+:root {
+    --main-color-bg: #2D2D2D;
+    --secondary-color-bg: #1E8AEF;
+
+    --base-color: #87BBEC;
+    --main-color: #2EC2CA;
+    --active-color: #1B7BCF;
+
+
+    --darkest-color-bg: #060606;
+    --lightest-color-bg: #676666;
+
+}
+
+
+        /* ==== SECTION ÉDITEUR DE TEXTE ==== */
+
+
+:root {
+    --ck-color-media-embed-placeholder-url-text: var(--base-color) !important;
+    --ck-color-media-embed-placeholder-url-text-hover: var(--active-color) !important;
+
+    --ck-color-upload-placeholder-loader: var(--base-color) !important;
+
+    --ck-color-image-upload-icon: var(--base-color) !important;
+
+    --ck-color-resizer-tooltip-background: var(--darkest-color-bg) !important;
+    --ck-color-resizer-tooltip-text: var(--base-color) !important;
+
+    --ck-color-split-button-hover-background: var(--darkest-color-bg) !important;
+    --ck-color-split-button-hover-border: var(--darkest-color-bg) !important;
+
+    --ck-color-color-grid-check-icon: var(--base-color) !important;
+
+    --ck-color-base-foreground: var(--secondary-color-bg) !important;
+    --ck-color-base-background: var(--lightest-color-bg) !important;
+    --ck-color-base-border: var(--darkest-color-bg) !important;
+    --ck-color-base-text: var(--base-color) !important;
+    --ck-color-base-active: var(--active-color) !important;
+    --ck-color-base-active-focus: var(--active-color) !important;
+    --ck-color-text: var(--ck-color-base-text) !important;
+    --ck-color-button-default-hover-background: var(--active-color) !important;
+    --ck-color-button-default-active-background: var(--active-color) !important;
+    --ck-color-button-default-active-shadow: transparent !important;
+    --ck-color-button-default-disabled-background: transparent !important;
+    --ck-color-button-on-background: var(--active-color) !important;
+    --ck-color-button-on-hover-background: var(--active-color) !important;
+    --ck-color-button-on-active-background: var(--active-color) !important;
+    --ck-color-button-on-active-shadow: transparent !important;
+    --ck-color-button-on-disabled-background: #adadad !important;
+    --ck-color-input-border: transparent !important;
+    --ck-color-input-error-border: var(--ck-color-base-error) !important;
+    --ck-color-input-text: var(--ck-color-base-text) !important;
+    --ck-color-input-disabled-background: #adadad !important;
+    --ck-color-input-disabled-border: none !important;
+    --ck-color-upload-bar-background: var(--main-color) !important;
+    --ck-color-link-default: var(--main-color) !important;
+    --ck-color-link-selected-background: var(--active-color) !important;
+    --ck-color-link-fake-selection:  var(--main-color) !important;
+    --ck-color-focus-border: var(--main-color) !important;
+
+}
+
+
+        /* ==== SECTION STYLE GÉNÉRAL ==== */
+
+*:focus {
+    box-shadow: none !important;
+}
+
+html{
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+
+    background-image: linear-gradient(to top, var(--darkest-color-bg) 0%, var(--lightest-color-bg) 100%);
+
+    color: var(--base-color);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'RocknRoll One', sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* GESTION DE LA SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main-color-bg);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--base-color);
+}
+
+
+
+.img-modal {
+    display: none;
+    position: fixed;
+    z-index: 1072;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* On ajoute un petit margin top à nos pages */
+.page{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+    /* ==== SECTION FORUMLAIRES ==== */
+
+
+.mdp-confirm-form{
+    background: none;
+    border: none;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.star-required::after {
+    content: '*';
+    color: red;
+}
+
+
+
+        /* ==== SECTION STYLE NAVBAR ==== */
+
+
+ul{
+    list-style-type: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+                        /* ==== PAGE ACCUEIL ==== */
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+
+
+.nb-joueurs{
+    margin-top: 10px;
+}
+
+.ip{
+    margin-top: 25px;
+}
+
+.ip button{
+    background-color: var(--base-color);
+}
+
+.ip button:hover{
+    background-color: white;
+    -webkit-animation: animate-positive 3s;
+    animation: animate-positive 3s
+}
+
+
+.news-content{
+    margin-bottom: 20px;
+}
+
+#News{
+    margin-bottom: 55px;
+}
+
+.min-footer:hover{
+    background-color: var(--main-color);
+}
+
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+                        /* ==== PAGE FORUM ==== */
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+
+
+/* Prefix (1.8.2 ready)*/
+.style1 {
+    background-image: url(../img/etoile-anime.gif);
+}
+
+.style2 {
+    background-image: url(../img/spark-gold.gif);
+}
+
+.style3 {
+    background-image: url(../img/lightning-blue.gif);
+}
+
+.style4 {
+    background-image: url('../img/bubble.gif');
+    background-position: center;
+}
+
+.style5 {
+    background-image: url('../img/explosion.gif');
+    background-repeat: no-repeat;
+}
+
+.style6 {
+    background-image: url('../img/fire.gif');
+    background-position: center;
+}
+
+.style7 {
+    background-image: url('../img/hearts.gif');
+    background-position: center;
+}
+
+.style8{
+    background-image: url("../img/golden-apple.gif");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.style9{
+    background-image: url("../img/diamond-sword.gif");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.style10 {
+    background-image: url("../img/diamond.gif");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.style11 {
+    background-image: url("../img/coins.gif");
+}
+
+
+
+
+/* PREFIX */
+
+.prefix {
+    background-color: transparent;
+    padding: 0px 6px;
+    margin: -1px 0;
+    border: 1px solid transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    border-radius: 0px;
+    display: inline-block;
+}
+
+a.prefixLink:hover {
+    text-decoration: none;
+}
+
+a.prefixLink:hover .prefix {
+    color: rgb(70,70,70);
+    text-decoration: none;
+    background-color: rgb(245,245,245);
+    padding: 0 6px;
+    border: 1px solid rgb(222,222,222);
+}
+
+.prefix a {
+    color: inherit;
+}
+
+.prefix.prefixPrimary {
+    color: rgb(70, 70, 70);
+    background-color: rgb(239, 239, 239);
+    border-color: rgb(239, 239, 239);
+}
+
+.prefix.prefixSecondary {
+    color: rgb(73, 73, 73);
+    background-color: rgb(203, 203, 203);
+    border-color: rgb(203, 203, 203);
+}
+
+.prefix.prefixRed {
+    color: white;
+    background-color: red;
+    border-color: #F88;
+}
+
+.prefix.prefixGreen {
+    color: white;
+    background-color: green;
+    border-color: green;
+}
+
+.prefix.prefixOlive {
+    color: black;
+    background-color: olive;
+    border-color: olive;
+}
+
+.prefix.prefixLightGreen {
+    color: black;
+    background-color: lightgreen;
+    border-color: lightgreen;
+}
+
+.prefix.prefixBlue {
+    color: white;
+    background-color: blue;
+    border-color: #88F;
+}
+
+.prefix.prefixRoyalBlue {
+    color: white;
+    background-color: royalblue;
+    border-color: #81A9E1;
+}
+
+.prefix.prefixSkyBlue {
+    color: black;
+    background-color: skyblue;
+    border-color: skyblue;
+}
+
+.prefix.prefixGray {
+    color: black;
+    background-color: gray;
+    border-color: #AAA;
+}
+
+.prefix.prefixSilver {
+    color: black;
+    background-color: silver;
+    border-color: silver;
+}
+
+.prefix.prefixYellow {
+    color: black;
+    background-color: yellow;
+    border-color: #E0E000;
+}
+
+.prefix.prefixOrange {
+    color: black;
+    background-color: orange;
+    border-color: #FFC520;
+}
+
+.prefix.prefixCreateur {
+    color: red;
+}
+
+
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+                        /* ==== PAGE PROFIL ==== */
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+
+
+.profile-image{
+    height:128px;
+    width:128px;
+}
+
+
+@media (max-width: 450px){
+    .btn-profil-choose{
+        font-size: 12px;
+        margin-top: 60px;
+    }
+    .profile-image{
+        height: 100px;
+        width: 100px;
+    }
+
+    .profile-skin3d{
+        height: 250px;
+        width: 115px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .profile-skin3d{
+        height: 450px;
+        width: 207px;
+    }
+}
+
+
+
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+                    /* ==== PARTIE SUPPORT ==== */
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+
+
+
+.txt-tickets{
+    color: var(--base-color);
+}
+
+
+
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+                         /* ==== PARTIE FOOTER ==== */
+
+        /* >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< */
+
+
+.footer-background{
+    background-color: var(--main-color-bg);
+}
+
+footer{
+    margin-top: auto;
+}
+

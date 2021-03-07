@@ -1,0 +1,17 @@
+# Ce fichier comporte toute la configuration du thème
+# Si vous souhaitez valider votre configuration (syntaxe) utilisez ce site
+# → http://www.yamllint.com
+
+Main:
+  theme:
+    couleurs:
+      main-color-bg: '#2D2D2D'
+      secondary-color-bg: '#1E8AEF'
+      base-color: '#87BBEC'
+      main-color: '#2EC2CA'
+      active-color: '#1B7BCF'
+      darkest-color-bg: '#060606'
+      lightest-color-bg: '#676666'
+
+Footer:
+  informations: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!"
